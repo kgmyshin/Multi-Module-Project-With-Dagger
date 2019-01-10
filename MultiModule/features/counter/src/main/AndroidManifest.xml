@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.kgmyshin.counter">
+
+    <application>
+        <activity android:name=".CounterActivity"/>
+    </application>
+
+</manifest>

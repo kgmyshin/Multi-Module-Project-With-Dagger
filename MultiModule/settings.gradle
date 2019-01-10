@@ -1,0 +1,9 @@
+include ':app',
+        ':counter',
+        ':greeting',
+        ':common'
+
+def featuresDir = new File("features")
+project(':counter').projectDir = new File(featuresDir, "counter")
+project(':greeting').projectDir = new File(featuresDir, "greeting")
+project(':common').projectDir = new File(featuresDir, "common")
