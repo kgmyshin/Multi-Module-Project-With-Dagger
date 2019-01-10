@@ -2,6 +2,7 @@ package com.kgmyshin.myapplication
 
 import dagger.Component
 import dagger.android.AndroidInjectionModule
+import dagger.android.AndroidInjector
 import javax.inject.Singleton
 
 
@@ -13,6 +14,4 @@ import javax.inject.Singleton
         MainFragmentModule::class
     ]
 )
-interface AppComponent {
-    fun inject(application: Application)
-}
+interface AppComponent : AndroidInjector<Application>
